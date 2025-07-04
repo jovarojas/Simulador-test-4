@@ -17,7 +17,7 @@
         window.addEventListener("DOMContentLoaded", function () {
             let preguntaActual = parseInt(localStorage.getItem("preguntaActual")) || 0; // Cargar pregunta guardada o iniciar en 0
             let preguntas = document.querySelectorAll(".pregunta");
-            let tiempoRestante = parseInt(localStorage.getItem("tiempoRestante")) || 3600; // Cargar tiempo o iniciar en 1 hora;
+            let tiempoRestante = parseInt(localStorage.getItem("tiempoRestante")) || 4800; // Cargar tiempo o iniciar en 1 hora;
             let timer;
             let respuestasCorrectas = {
                 q1: "c", q2: "d", q3: "a", q4: "a", q5: "a", q6: "b", q7: "d", q8: "a", q9: "c", q10: "d", q11: "b", q12: "a",
@@ -440,7 +440,7 @@
             <img src="images/logo.png" alt="logo del preuniversitario">
             <h2>SIMULADOR UNACH Nº4<br>PREUNIVERSITARIO SAN MARCOS</h2>
             <button id="reiniciarBtn">Reiniciar Test</button>
-            <p id="timer">Tiempo restante: 60:00</p>
+            <p id="timer">Tiempo restante: 80:00</p>
         </header>
 
         <div id="quiz">
